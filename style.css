@@ -34,12 +34,12 @@ body{
 }
 
 .content h1{
-	font-size: 50px;
+	font-size: 60px;
 	color:rgb(255,255,255,0.7);
 }
 
 .content h3{
-	font-size: 20px;
+	font-size: 30px;
 	color: #cc005f;
 }
 .content .social{
@@ -79,14 +79,14 @@ body{
 	
 }
 #pic{
-	height: 10rem;
+	height: 15rem;
 	border-radius: 50%;
 }
 .box{
-	width: 60%;
+	width: 50%;
 	color: #fff;
 	margin-top: 20px;
-	margin-left: 20px;
+	margin-left: 40px;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
     padding: 10px;	
@@ -101,20 +101,20 @@ body{
 
 .container .box p{
 	text-align: justify;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 @media only screen and (max-width:270px)
 {
 	
 	.container .box p{
-	font-size: 14px!important ;
+	font-size: 17px!important ;
 	}
 }
 
 @media only screen and (max-width:920px)
 {
 	.container .box p{
-	font-size: 17px;
+	font-size: 12px;
 	}
 }
