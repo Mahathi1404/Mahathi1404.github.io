@@ -106,6 +106,10 @@ body{
 
 @media only screen and (max-width:270px)
 {
+	#pic{
+		height:13rem;
+		border-radius: 50%;
+	}
 	
 	.container .box p{
 	font-size: 17px!important ;
