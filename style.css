@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	background-image: url("coverImg.jpg");
+	
 	
 }
 html{
@@ -11,19 +11,20 @@ html{
 }
 body{
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .cover{
 	width: 100%;
 	height: 100vh;
 	position: relative;
-	background:url("images/coverImg.jpg");
+	background:url("images/coverImg.jpg") no-repeat center;
 	background-size :cover;
 
 }
 
 .content-box{
-	height: 120%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -66,30 +67,51 @@ body{
 	text-decoration: none;
 }
 #page2{
-	width:100%;
+	position: relative;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+
+
+	/* width:100%;
 	height:100vh;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.about{
+	height: 100%;
+	width: 100%;
 }
 .container{
-	padding-top: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 100%;
-	flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+	flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 	
 }
+img{
+	height: 300px;
+	max-width: 650px;
+
+}
 #pic{
-	height: 15rem;
-	border-radius: 50%;
+	width: 300px;
+	clip-path: circle();
+	margin: 20px;
 }
 .box{
-	width: 50%;
+	max-width: 50%;
 	color: #fff;
-	margin-top: 20px;
-	margin-left: 40px;
+	padding: 0px 15px 15px 15px;
+	margin: 20px;
+	align-items: center;
 	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 10px;
-    padding: 10px;	
+	border-radius: 10px;	
 }
 	
 }
@@ -98,27 +120,36 @@ body{
 	color: white;
 }
 
-
-.container .box p{
-	text-align: justify;
-	font-size: 25px;
+.container .box h2{
+	margin: 0;
+	padding: 0;
+	font-size: 3vw;
 }
 
-@media only screen and (max-width:270px)
+.container .box p{
+	margin: 0;
+	padding: 0;
+	font-size: 2vw;
+}
+
+@media only screen and (max-width:380px)
 {
+	.container{
+		height: unset !important;
+	}
 	#pic{
 		height:13rem;
 		border-radius: 50%;
 	}
 	
 	.container .box p{
-	font-size: 17px!important ;
+	font-size: 12px!important ;
 	}
 }
 
-@media only screen and (max-width:920px)
+/* @media only screen and (max-width:920px)
 {
 	.container .box p{
 	font-size: 12px;
 	}
-}
+}  */
